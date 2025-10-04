@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tabish Ali - Creative Developer, UI/UX Designer & Digital Innovator. Transforming ideas into digital reality with cutting-edge web solutions.">
+    <meta name="keywords" content="web developer, UI/UX designer, frontend developer, portfolio, digital solutions">
+    <meta name="author" content="Tabish Ali">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Tabish Ali - Creative Developer & Designer">
+    <meta property="og:description" content="Professional portfolio showcasing innovative web development and design solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tabishali.dev">
+    <meta property="og:image" content="https://tabishali.dev/assets/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tabish Ali - Creative Developer & Designer">
+    <meta name="twitter:description" content="Professional portfolio showcasing innovative web development and design solutions.">
+    <meta name="twitter:image" content="https://tabishali.dev/assets/twitter-image.jpg">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#6366F1">
+    <meta name="msapplication-TileColor" content="#6366F1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tabish Ali",
+        "jobTitle": "Creative Developer & UI/UX Designer",
+        "description": "Professional web developer and designer specializing in modern web solutions",
+        "url": "https://tabishali.dev",
+        "sameAs": [
+            "https://github.com/tabishali",
+            "https://linkedin.com/in/tabishali",
+            "https://twitter.com/tabishali"
+        ],
+        "knowsAbout": [
+            "Web Development",
+            "UI/UX Design",
+            "Frontend Development",
+            "JavaScript",
+            "React",
+            "Node.js"
+        ]
+    }
+    </script>
+    
+    <title>Tabish Ali - Creative Developer & Digital Innovator</title>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+    
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <svg class="logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="url(#logoGradient)" stroke-width="4" class="logo-circle"/>
+                    <text x="100" y="110" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="48" font-weight="700" fill="url(#logoGradient)" class="logo-text">TA</text>
+                </svg>
+            </div>
+            <div class="preloader-text">
+                <div class="glitch-text" data-text="TABISH ALI">TABISH ALI</div>
+            </div>
+            <div class="preloader-progress">
+                <div class="progress-circle">
+                    <svg class="progress-svg" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="#1E293B" stroke-width="8" class="progress-bg"/>
+                        <circle cx="50" cy="50" r="45" fill="none" stroke="url(#logoGradient)" stroke-width="8" class="progress-bar" stroke-dasharray="283" stroke-dashoffset="283"/>
+                    </svg>
+                    <div class="progress-percentage">0%</div>
+                </div>
+            </div>
+        </div>
+        <div class="preloader-particles">
+            <canvas id="particles-canvas"></canvas>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="navLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="url(#navLogoGradient)" stroke-width="3" class="nav-logo-circle"/>
+                        <text x="50" y="58" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700" fill="url(#navLogoGradient)" class="nav-logo-text">TA</text>
+                    </svg>
+                    <span class="logo-text">Tabish Ali</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-section="home">
+                            <span class="nav-text">Home</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-section="about">
+                            <span class="nav-text">About</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-section="services">
+                            <span class="nav-text">Services</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-section="skills">
+                            <span class="nav-text">Skills</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link" data-section="portfolio">
+                            <span class="nav-text">Portfolio</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link" data-section="testimonials">
+                            <span class="nav-text">Testimonials</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link" data-section="blog">
+                            <span class="nav-text">Blog</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-section="contact">
+                            <span class="nav-text">Contact</span>
+                            <span class="nav-indicator"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon theme-icon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-particles">
+                    <canvas id="hero-particles"></canvas>
+                </div>
+                <div class="hero-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                    <div class="shape shape-5"></div>
+                </div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="greeting" data-aos="fade-up" data-aos-delay="200">
+                            <span class="greeting-text">Hi, I'm</span>
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+                            <span class="name-text">TABISH ALI</span>
+                        </h1>
+                        <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+                            <span class="typing-text">
+                                <span class="typing-cursor">|</span>
+                            </span>
+                        </div>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="800">
+                            Transforming ideas into digital reality with cutting-edge web solutions, 
+                            innovative design, and seamless user experiences.
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
+                            <a href="#portfolio" class="btn btn-primary">
+                                <span class="btn-text">View My Work</span>
+                                <span class="btn-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </span>
+                                <span class="btn-ripple"></span>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span class="btn-text">Get In Touch</span>
+                                <span class="btn-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="btn-ripple"></span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-illustration" data-aos="fade-left" data-aos-delay="600">
+                        <div class="illustration-container">
+                            <svg class="hero-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Desk -->
+                                <rect x="50" y="350" width="500" height="20" fill="#1E293B" rx="10" class="desk"/>
+                                
+                                <!-- Computer Screen -->
+                                <rect x="150" y="200" width="200" height="120" fill="#0F172A" rx="8" class="screen"/>
+                                <rect x="160" y="210" width="180" height="100" fill="#10B981" rx="4" class="screen-content"/>
+                                
+                                <!-- Code Lines -->
+                                <line x1="170" y1="230" x2="320" y2="230" stroke="#F8FAFC" stroke-width="2" class="code-line"/>
+                                <line x1="170" y1="250" x2="280" y2="250" stroke="#F8FAFC" stroke-width="2" class="code-line"/>
+                                <line x1="170" y1="270" x2="300" y2="270" stroke="#F8FAFC" stroke-width="2" class="code-line"/>
+                                <line x1="170" y1="290" x2="260" y2="290" stroke="#F8FAFC" stroke-width="2" class="code-line"/>
+                                
+                                <!-- Person -->
+                                <circle cx="250" cy="150" r="30" fill="#FBBF24" class="head"/>
+                                <rect x="220" y="180" width="60" height="80" fill="#6366F1" rx="30" class="body"/>
+                                
+                                <!-- Arms -->
+                                <rect x="200" y="190" width="15" height="50" fill="#FBBF24" rx="7" class="arm"/>
+                                <rect x="285" y="190" width="15" height="50" fill="#FBBF24" rx="7" class="arm"/>
+                                
+                                <!-- Coffee Cup -->
+                                <rect x="400" y="320" width="30" height="40" fill="#8B5CF6" rx="15" class="coffee-cup"/>
+                                <path d="M415 320 Q420 310 425 320" stroke="#EC4899" stroke-width="3" fill="none" class="coffee-steam"/>
+                                <path d="M420 320 Q425 310 430 320" stroke="#EC4899" stroke-width="3" fill="none" class="coffee-steam"/>
+                                
+                                <!-- Floating Elements -->
+                                <circle cx="100" cy="100" r="8" fill="#6366F1" class="floating-element"/>
+                                <circle cx="500" cy="120" r="6" fill="#8B5CF6" class="floating-element"/>
+                                <circle cx="80" cy="200" r="5" fill="#EC4899" class="floating-element"/>
+                                <circle cx="520" cy="180" r="7" fill="#10B981" class="floating-element"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-social" data-aos="fade-right" data-aos-delay="1200">
+                    <div class="social-links">
+                        <a href="https://github.com/tabishali" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/tabishali" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/tabishali" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://dribbble.com/tabishali" class="social-link" target="_blank" rel="noopener" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="https://behance.net/tabishali" class="social-link" target="_blank" rel="noopener" aria-label="Behance">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1400">
+                    <div class="scroll-text">Scroll Down</div>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">The Story Behind The Code</h2>
+                    <p class="section-description">
+                        Passionate developer, creative thinker, and digital innovator with a mission to transform ideas into exceptional digital experiences.
+                    </p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="image-frame">
+                                <img src="assets/images/tabish-ali-portrait.jpg" alt="Tabish Ali - Professional Portrait" class="portrait-image">
+                                <div class="image-overlay">
+                                    <div class="floating-skills">
+                                        <div class="skill-badge" data-skill="React">React</div>
+                                        <div class="skill-badge" data-skill="JavaScript">JavaScript</div>
+                                        <div class="skill-badge" data-skill="Design">Design</div>
+                                        <div class="skill-badge" data-skill="Node.js">Node.js</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-decoration">
+                                <div class="decoration-circle"></div>
+                                <div class="decoration-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                        <div class="bio-content">
+                            <h3 class="bio-title">Hello, I'm Tabish Ali</h3>
+                            <div class="bio-text">
+                                <p>
+                                    I'm a passionate creative developer and UI/UX designer with over 5 years of experience 
+                                    in crafting digital solutions that make a difference. My journey began with curiosity 
+                                    about how websites work, and it has evolved into a deep love for creating meaningful 
+                                    digital experiences.
+                                </p>
+                                <p>
+                                    I specialize in modern web development, user interface design, and digital innovation. 
+                                    My approach combines technical expertise with creative thinking to deliver solutions 
+                                    that not only meet requirements but exceed expectations.
+                                </p>
+                                <p>
+                                    When I'm not coding or designing, you'll find me exploring new technologies, 
+                                    contributing to open-source projects, or sharing knowledge with the developer community. 
+                                    I believe in continuous learning and staying ahead of the curve in this ever-evolving industry.
+                                </p>
+                            </div>
+                            
+                            <div class="stats-grid">
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="stat-number" data-count="5">0</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="700">
+                                    <div class="stat-number" data-count="150">0</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="800">
+                                    <div class="stat-number" data-count="80">0</div>
+                                    <div class="stat-label">Happy Clients</div>
+                                </div>
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="900">
+                                    <div class="stat-number" data-count="12">0</div>
+                                    <div class="stat-label">Awards Won</div>
+                                </div>
+                            </div>
+                            
+                            <div class="about-actions" data-aos="fade-up" data-aos-delay="1000">
+                                <a href="assets/files/tabish-ali-cv.pdf" class="btn btn-primary" download>
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span class="btn-ripple"></span>
+                                </a>
+                                <a href="#contact" class="btn btn-outline">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <span class="btn-icon">
+                                        <i class="fas fa-comments"></i>
+                                    </span>
+                                    <span class="btn-ripple"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Journey Timeline -->
+                <div class="journey-timeline" data-aos="fade-up" data-aos-delay="1200">
+                    <h3 class="timeline-title">My Journey</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="timeline-marker">
+                                <div class="marker-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2019</div>
+                                <h4 class="timeline-title">Computer Science Degree</h4>
+                                <p class="timeline-description">
+                                    Graduated with honors in Computer Science, laying the foundation for my technical journey.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                            <div class="timeline-marker">
+                                <div class="marker-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2020</div>
+                                <h4 class="timeline-title">First Web Development Job</h4>
+                                <p class="timeline-description">
+                                    Started my professional career as a junior web developer, learning the ropes of real-world development.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+                            <div class="timeline-marker">
+                                <div class="marker-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2021</div>
+                                <h4 class="timeline-title">UI/UX Design Specialization</h4>
+                                <p class="timeline-description">
+                                    Expanded my skills into design, completing advanced courses in UI/UX and user research.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="800">
+                            <div class="timeline-marker">
+                                <div class="marker-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2022</div>
+                                <h4 class="timeline-title">Freelance Career Launch</h4>
+                                <p class="timeline-description">
+                                    Started freelancing, working with clients worldwide and building a diverse portfolio.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="1000">
+                            <div class="timeline-marker">
+                                <div class="marker-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023</div>
+                                <h4 class="timeline-title">Award Recognition</h4>
+                                <p class="timeline-description">
+                                    Received multiple awards for innovative web solutions and outstanding client satisfaction.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left" data-aos-delay="1200">
+                            <div class="timeline-marker">
+                                <div class="marker-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2024</div>
+                                <h4 class="timeline-title">Current Focus</h4>
+                                <p class="timeline-description">
+                                    Focusing on cutting-edge technologies, mentoring junior developers, and pushing creative boundaries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Services</span>
+                    <h2 class="section-title">What I Do</h2>
+                    <p class="section-description">
+                        Transforming ideas into digital reality with comprehensive solutions that drive results and exceed expectations.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="webGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="20" y="30" width="60" height="40" fill="none" stroke="url(#webGradient)" stroke-width="3" rx="5"/>
+                                <rect x="25" y="35" width="50" height="30" fill="url(#webGradient)" opacity="0.2" rx="3"/>
+                                <line x1="30" y1="45" x2="70" y2="45" stroke="url(#webGradient)" stroke-width="2"/>
+                                <line x1="30" y1="55" x2="60" y2="55" stroke="url(#webGradient)" stroke-width="2"/>
+                                <circle cx="75" cy="25" r="8" fill="url(#webGradient)"/>
+                                <path d="M20 30 L50 15 L80 30" stroke="url(#webGradient)" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">
+                            Modern, responsive websites built with cutting-edge technologies and best practices for optimal performance.
+                        </p>
+                        <ul class="service-features">
+                            <li>React & Vue.js Applications</li>
+                            <li>Node.js Backend Development</li>
+                            <li>Full-Stack Solutions</li>
+                            <li>API Development & Integration</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="designGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="25" y="20" width="50" height="50" fill="none" stroke="url(#designGradient)" stroke-width="3" rx="8"/>
+                                <circle cx="40" cy="35" r="3" fill="url(#designGradient)"/>
+                                <circle cx="60" cy="35" r="3" fill="url(#designGradient)"/>
+                                <path d="M35 50 Q50 60 65 50" stroke="url(#designGradient)" stroke-width="2" fill="none"/>
+                                <rect x="30" y="65" width="40" height="8" fill="url(#designGradient)" opacity="0.3" rx="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">UI/UX Design</h3>
+                        <p class="service-description">
+                            User-centered design solutions that create intuitive, engaging experiences and drive user satisfaction.
+                        </p>
+                        <ul class="service-features">
+                            <li>User Research & Analysis</li>
+                            <li>Wireframing & Prototyping</li>
+                            <li>Visual Design & Branding</li>
+                            <li>Usability Testing</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="mobileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="35" y="15" width="30" height="55" fill="none" stroke="url(#mobileGradient)" stroke-width="3" rx="8"/>
+                                <rect x="40" y="20" width="20" height="35" fill="url(#mobileGradient)" opacity="0.2" rx="3"/>
+                                <circle cx="50" cy="60" r="3" fill="url(#mobileGradient)"/>
+                                <rect x="45" y="70" width="10" height="2" fill="url(#mobileGradient)" rx="1"/>
+                                <circle cx="30" cy="25" r="2" fill="url(#mobileGradient)"/>
+                                <circle cx="70" cy="25" r="2" fill="url(#mobileGradient)"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Mobile Apps</h3>
+                        <p class="service-description">
+                            Cross-platform mobile applications that deliver native performance with modern development frameworks.
+                        </p>
+                        <ul class="service-features">
+                            <li>React Native Development</li>
+                            <li>Flutter Applications</li>
+                            <li>iOS & Android Apps</li>
+                            <li>Progressive Web Apps</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="40" r="20" fill="none" stroke="url(#brandGradient)" stroke-width="3"/>
+                                <path d="M35 40 Q50 25 65 40" stroke="url(#brandGradient)" stroke-width="2" fill="none"/>
+                                <path d="M35 40 Q50 55 65 40" stroke="url(#brandGradient)" stroke-width="2" fill="none"/>
+                                <rect x="40" y="65" width="20" height="15" fill="url(#brandGradient)" opacity="0.3" rx="3"/>
+                                <rect x="45" y="70" width="10" height="5" fill="url(#brandGradient)" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Branding & Identity</h3>
+                        <p class="service-description">
+                            Complete brand identity solutions that establish strong visual presence and memorable brand experiences.
+                        </p>
+                        <ul class="service-features">
+                            <li>Logo Design & Brand Guidelines</li>
+                            <li>Visual Identity Systems</li>
+                            <li>Marketing Materials</li>
+                            <li>Brand Strategy</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="ecommerceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="25" y="30" width="50" height="40" fill="none" stroke="url(#ecommerceGradient)" stroke-width="3" rx="5"/>
+                                <rect x="30" y="35" width="40" height="25" fill="url(#ecommerceGradient)" opacity="0.2" rx="3"/>
+                                <circle cx="40" cy="45" r="3" fill="url(#ecommerceGradient)"/>
+                                <rect x="45" y="42" width="15" height="6" fill="url(#ecommerceGradient)" opacity="0.5" rx="2"/>
+                                <rect x="45" y="50" width="20" height="6" fill="url(#ecommerceGradient)" opacity="0.5" rx="2"/>
+                                <rect x="20" y="75" width="60" height="8" fill="url(#ecommerceGradient)" opacity="0.3" rx="4"/>
+                                <circle cx="30" cy="79" r="2" fill="url(#ecommerceGradient)"/>
+                                <circle cx="70" cy="79" r="2" fill="url(#ecommerceGradient)"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">E-commerce Solutions</h3>
+                        <p class="service-description">
+                            Complete e-commerce platforms that drive sales with optimized user experience and conversion-focused design.
+                        </p>
+                        <ul class="service-features">
+                            <li>Shopify & WooCommerce</li>
+                            <li>Custom E-commerce Platforms</li>
+                            <li>Payment Integration</li>
+                            <li>Inventory Management</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="seoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M20 70 L30 50 L40 60 L50 30 L60 40 L70 20 L80 30" stroke="url(#seoGradient)" stroke-width="3" fill="none"/>
+                                <circle cx="30" cy="50" r="4" fill="url(#seoGradient)"/>
+                                <circle cx="50" cy="30" r="4" fill="url(#seoGradient)"/>
+                                <circle cx="70" cy="20" r="4" fill="url(#seoGradient)"/>
+                                <rect x="15" y="75" width="70" height="8" fill="url(#seoGradient)" opacity="0.2" rx="4"/>
+                                <rect x="20" y="80" width="60" height="6" fill="url(#seoGradient)" opacity="0.3" rx="3"/>
+                                <rect x="25" y="85" width="50" height="4" fill="url(#seoGradient)" opacity="0.4" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">SEO & Marketing</h3>
+                        <p class="service-description">
+                            Strategic digital marketing solutions that increase visibility, drive traffic, and boost conversions.
+                        </p>
+                        <ul class="service-features">
+                            <li>Search Engine Optimization</li>
+                            <li>Analytics & Reporting</li>
+                            <li>Growth Strategy</li>
+                            <li>Content Marketing</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="1400">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="consultingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="35" r="15" fill="none" stroke="url(#consultingGradient)" stroke-width="3"/>
+                                <path d="M40 35 L45 40 L50 35 L55 40 L60 35" stroke="url(#consultingGradient)" stroke-width="2" fill="none"/>
+                                <rect x="35" y="55" width="30" height="20" fill="none" stroke="url(#consultingGradient)" stroke-width="3" rx="3"/>
+                                <rect x="40" y="60" width="20" height="10" fill="url(#consultingGradient)" opacity="0.2" rx="2"/>
+                                <rect x="25" y="80" width="50" height="8" fill="url(#consultingGradient)" opacity="0.3" rx="4"/>
+                                <rect x="30" y="85" width="40" height="6" fill="url(#consultingGradient)" opacity="0.4" rx="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Consulting</h3>
+                        <p class="service-description">
+                            Strategic technology consulting to help businesses make informed decisions and optimize their digital presence.
+                        </p>
+                        <ul class="service-features">
+                            <li>Technology Strategy</li>
+                            <li>Architecture Planning</li>
+                            <li>Performance Optimization</li>
+                            <li>Digital Transformation</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="1600">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="maintenanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="30" y="25" width="40" height="30" fill="none" stroke="url(#maintenanceGradient)" stroke-width="3" rx="5"/>
+                                <rect x="35" y="30" width="30" height="20" fill="url(#maintenanceGradient)" opacity="0.2" rx="3"/>
+                                <circle cx="45" cy="40" r="2" fill="url(#maintenanceGradient)"/>
+                                <circle cx="55" cy="40" r="2" fill="url(#maintenanceGradient)"/>
+                                <rect x="40" y="45" width="20" height="2" fill="url(#maintenanceGradient)" rx="1"/>
+                                <rect x="25" y="60" width="50" height="8" fill="url(#maintenanceGradient)" opacity="0.3" rx="4"/>
+                                <rect x="30" y="65" width="40" height="6" fill="url(#maintenanceGradient)" opacity="0.4" rx="3"/>
+                                <rect x="35" y="70" width="30" height="4" fill="url(#maintenanceGradient)" opacity="0.5" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Maintenance & Support</h3>
+                        <p class="service-description">
+                            Ongoing maintenance and support services to keep your digital solutions running smoothly and securely.
+                        </p>
+                        <ul class="service-features">
+                            <li>Regular Updates & Security</li>
+                            <li>Performance Monitoring</li>
+                            <li>Bug Fixes & Improvements</li>
+                            <li>24/7 Technical Support</li>
+                        </ul>
+                        <button class="service-btn">
+                            <span class="btn-text">Learn More</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Skills</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-description">
+                        A comprehensive skill set built through years of experience, continuous learning, and hands-on project development.
+                    </p>
+                </div>
+                
+                <!-- Skills Filter Tabs -->
+                <div class="skills-filter" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                </div>
+                
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">HTML5</h3>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="95"></div>
+                            </div>
+                            <span class="progress-percentage">95%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">CSS3/SASS</h3>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="92"></div>
+                            </div>
+                            <span class="progress-percentage">92%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">JavaScript</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                            <span class="progress-percentage">90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">React</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88"></div>
+                            </div>
+                            <span class="progress-percentage">88%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-vue"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Vue.js</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
+                            <span class="progress-percentage">85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">TypeScript</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="82"></div>
+                            </div>
+                            <span class="progress-percentage">82%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="900">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Next.js</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item frontend" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Tailwind CSS</h3>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="93"></div>
+                            </div>
+                            <span class="progress-percentage">93%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Node.js</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
+                            <span class="progress-percentage">85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Express.js</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="83"></div>
+                            </div>
+                            <span class="progress-percentage">83%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Python</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75"></div>
+                            </div>
+                            <span class="progress-percentage">75%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">PHP</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="70"></div>
+                            </div>
+                            <span class="progress-percentage">70%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">MongoDB</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">MySQL</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="82"></div>
+                            </div>
+                            <span class="progress-percentage">82%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="900">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">PostgreSQL</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="78"></div>
+                            </div>
+                            <span class="progress-percentage">78%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item backend" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">REST APIs</h3>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88"></div>
+                            </div>
+                            <span class="progress-percentage">88%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools Skills -->
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Git/GitHub</h3>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                            <span class="progress-percentage">90%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Docker</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="72"></div>
+                            </div>
+                            <span class="progress-percentage">72%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">AWS</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="68"></div>
+                            </div>
+                            <span class="progress-percentage">68%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Figma</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88"></div>
+                            </div>
+                            <span class="progress-percentage">88%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Adobe XD</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
+                            <span class="progress-percentage">85%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Photoshop</h3>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                            <span class="progress-percentage">80%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="900">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">Webpack</h3>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75"></div>
+                            </div>
+                            <span class="progress-percentage">75%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item tools" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h3 class="skill-name">VS Code</h3>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="95"></div>
+                            </div>
+                            <span class="progress-percentage">95%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skills Summary -->
+                <div class="skills-summary" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3 class="summary-title">500K+ Lines of Code</h3>
+                            <p class="summary-description">Written across various projects and technologies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3 class="summary-title">2000+ Cups of Coffee</h3>
+                            <p class="summary-description">Fueling creativity and productivity</p>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3 class="summary-title">10,000+ Hours</h3>
+                            <p class="summary-description">Dedicated to mastering the craft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Recent Work & Success Stories</h2>
+                    <p class="section-description">
+                        A showcase of innovative projects that demonstrate technical expertise, creative problem-solving, and exceptional results.
+                    </p>
+                </div>
+                
+                <!-- Portfolio Filter -->
+                <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="200">
+                    <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+                    <button class="portfolio-filter-btn" data-filter="web">Web Development</button>
+                    <button class="portfolio-filter-btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="portfolio-filter-btn" data-filter="design">UI/UX Design</button>
+                    <button class="portfolio-filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="portfolio-filter-btn" data-filter="branding">Branding</button>
+                </div>
+                
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Featured Project -->
+                    <div class="portfolio-item featured web" data-aos="fade-up" data-aos-delay="300">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-ecommerce-platform.jpg" alt="E-commerce Platform - Featured Project" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="ecommerce-platform">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://github.com/tabishali/ecommerce-platform" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://ecommerce-demo.tabishali.dev" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio-badge">Featured</div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag web">Web Development</span>
+                                <span class="category-tag ecommerce">E-commerce</span>
+                            </div>
+                            <h3 class="portfolio-title">E-commerce Platform</h3>
+                            <p class="portfolio-description">
+                                A full-stack e-commerce solution with advanced features including real-time inventory management, 
+                                secure payment processing, and comprehensive admin dashboard.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                            <div class="portfolio-stats">
+                                <div class="stat">
+                                    <span class="stat-number">15K+</span>
+                                    <span class="stat-label">Users</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">$2M+</span>
+                                    <span class="stat-label">Revenue</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Regular Projects -->
+                    <div class="portfolio-item web" data-aos="fade-up" data-aos-delay="400">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-saas-dashboard.jpg" alt="SaaS Dashboard Project" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="saas-dashboard">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://github.com/tabishali/saas-dashboard" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag web">Web Development</span>
+                            </div>
+                            <h3 class="portfolio-title">SaaS Analytics Dashboard</h3>
+                            <p class="portfolio-description">
+                                Real-time analytics dashboard with interactive charts, data visualization, and comprehensive reporting features.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item mobile" data-aos="fade-up" data-aos-delay="500">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-fitness-app.jpg" alt="Fitness Mobile App" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="fitness-app">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://github.com/tabishali/fitness-app" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag mobile">Mobile App</span>
+                            </div>
+                            <h3 class="portfolio-title">Fitness Tracker App</h3>
+                            <p class="portfolio-description">
+                                Cross-platform fitness tracking app with workout plans, progress monitoring, and social features.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Charts.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item design" data-aos="fade-up" data-aos-delay="600">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-ui-design-system.jpg" alt="UI Design System" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="design-system">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://figma.com/design-system" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-figma"></i>
+                                        <span>Figma</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag design">UI/UX Design</span>
+                            </div>
+                            <h3 class="portfolio-title">Design System</h3>
+                            <p class="portfolio-description">
+                                Comprehensive design system with reusable components, guidelines, and brand identity for consistent user experience.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Design Tokens</span>
+                                <span class="tech-tag">Storybook</span>
+                                <span class="tech-tag">Accessibility</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item ecommerce" data-aos="fade-up" data-aos-delay="700">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-online-store.jpg" alt="Online Store Project" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="online-store">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://github.com/tabishali/online-store" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <a href="https://store-demo.tabishali.dev" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag ecommerce">E-commerce</span>
+                            </div>
+                            <h3 class="portfolio-title">Online Fashion Store</h3>
+                            <p class="portfolio-description">
+                                Modern fashion e-commerce platform with advanced filtering, wishlist, and personalized recommendations.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Shopify</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item branding" data-aos="fade-up" data-aos-delay="800">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-brand-identity.jpg" alt="Brand Identity Project" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="brand-identity">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://behance.net/brand-identity" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-behance"></i>
+                                        <span>Behance</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag branding">Branding</span>
+                            </div>
+                            <h3 class="portfolio-title">Tech Startup Brand Identity</h3>
+                            <p class="portfolio-description">
+                                Complete brand identity design including logo, color palette, typography, and marketing materials.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Logo Design</span>
+                                <span class="tech-tag">Brand Guidelines</span>
+                                <span class="tech-tag">Illustration</span>
+                                <span class="tech-tag">Print Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item web" data-aos="fade-up" data-aos-delay="900">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-portfolio-website.jpg" alt="Portfolio Website Project" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="portfolio-website">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://github.com/tabishali/portfolio-website" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag web">Web Development</span>
+                            </div>
+                            <h3 class="portfolio-title">Creative Portfolio Website</h3>
+                            <p class="portfolio-description">
+                                Interactive portfolio website with smooth animations, custom illustrations, and responsive design.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item mobile" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-food-delivery.jpg" alt="Food Delivery App" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="food-delivery">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://github.com/tabishali/food-delivery" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag mobile">Mobile App</span>
+                            </div>
+                            <h3 class="portfolio-title">Food Delivery App</h3>
+                            <p class="portfolio-description">
+                                Food delivery application with real-time tracking, payment integration, and restaurant management.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Google Maps</span>
+                                <span class="tech-tag">Payment Gateway</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item design" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="portfolio-image">
+                            <img src="assets/images/project-web-app-design.jpg" alt="Web App Design" class="project-img">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="web-app-design">
+                                        <i class="fas fa-eye"></i>
+                                        <span>View Details</span>
+                                    </button>
+                                    <a href="https://dribbble.com/web-app-design" class="portfolio-btn" target="_blank" rel="noopener">
+                                        <i class="fab fa-dribbble"></i>
+                                        <span>Dribbble</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <div class="portfolio-category">
+                                <span class="category-tag design">UI/UX Design</span>
+                            </div>
+                            <h3 class="portfolio-title">SaaS Web App Design</h3>
+                            <p class="portfolio-description">
+                                User interface design for SaaS application with focus on usability, accessibility, and modern aesthetics.
+                            </p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">User Research</span>
+                                <span class="tech-tag">Wireframing</span>
+                                <span class="tech-tag">Prototyping</span>
+                                <span class="tech-tag">Usability Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="portfolio-actions" data-aos="fade-up" data-aos-delay="1200">
+                    <button class="btn btn-outline load-more-btn">
+                        <span class="btn-text">Load More Projects</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="btn-ripple"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Modal -->
+        <div id="project-modal" class="project-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img id="modal-project-image" src="" alt="" class="modal-img">
+                    </div>
+                    <div class="modal-info">
+                        <div class="modal-category">
+                            <span id="modal-category" class="category-tag"></span>
+                        </div>
+                        <h2 id="modal-title" class="modal-title"></h2>
+                        <p id="modal-description" class="modal-description"></p>
+                        
+                        <div class="modal-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Client:</span>
+                                <span id="modal-client" class="detail-value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span id="modal-duration" class="detail-value"></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Year:</span>
+                                <span id="modal-year" class="detail-value"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-challenge">
+                            <h3 class="modal-subtitle">Challenge</h3>
+                            <p id="modal-challenge-text" class="modal-text"></p>
+                        </div>
+                        
+                        <div class="modal-solution">
+                            <h3 class="modal-subtitle">Solution</h3>
+                            <p id="modal-solution-text" class="modal-text"></p>
+                        </div>
+                        
+                        <div class="modal-results">
+                            <h3 class="modal-subtitle">Results</h3>
+                            <div id="modal-results-stats" class="modal-stats"></div>
+                        </div>
+                        
+                        <div class="modal-tech">
+                            <h3 class="modal-subtitle">Technologies Used</h3>
+                            <div id="modal-tech-tags" class="modal-tech-tags"></div>
+                        </div>
+                        
+                        <div class="modal-links">
+                            <a id="modal-demo-link" href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                                <span class="btn-text">View Live Demo</span>
+                                <span class="btn-icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                            <a id="modal-github-link" href="#" class="btn btn-secondary" target="_blank" rel="noopener">
+                                <span class="btn-text">View on GitHub</span>
+                                <span class="btn-icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
