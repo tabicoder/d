@@ -1,0 +1,44 @@
+{
+  "name": "tabish-ali-portfolio",
+  "version": "1.0.0",
+  "description": "Cutting-edge portfolio website for Tabish Ali - Modern professional showcase",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass src/scss/main.scss dist/css/main.css --style=compressed --source-map",
+    "build:js": "webpack --mode=production",
+    "watch:css": "sass src/scss/main.scss dist/css/main.css --watch --style=expanded --source-map",
+    "watch:js": "webpack --mode=development --watch",
+    "optimize": "npm run build && npm run minify",
+    "minify": "terser dist/js/main.js -o dist/js/main.min.js --compress --mangle"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "ui-ux",
+    "frontend",
+    "javascript",
+    "css",
+    "animations"
+  ],
+  "author": "Tabish Ali",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.69.5",
+    "terser": "^5.24.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "lottie-web": "^5.12.2",
+    "swiper": "^11.0.5",
+    "aos": "^2.3.4",
+    "typed.js": "^2.1.0",
+    "countup.js": "^2.8.2",
+    "vanilla-tilt": "^1.8.1",
+    "particles.js": "^2.0.0"
+  }
+}
